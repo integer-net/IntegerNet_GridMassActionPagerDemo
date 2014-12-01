@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * integer_net GmbH Magento Module
+ *
+ * @package    IntegerNet_GridMassActionPagerDemo
+ * @copyright  Copyright (c) 2014 integer_net GmbH (http://www.integer-net.de/)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     integer_net GmbH <info@integer-net.de>
+ * @author     Viktor Franz <vf@integer-net.de>
+ */
+ -->
+<config>
+    <modules>
+        <IntegerNet_GridMassActionPagerDemo>
+            <version>1.0.0</version>
+        </IntegerNet_GridMassActionPagerDemo>
+    </modules>
+    <global>
+        <helpers>
+            <integernet_gridmassactionpagerdemo>
+                <class>IntegerNet_GridMassActionPagerDemo_Helper</class>
+            </integernet_gridmassactionpagerdemo>
+        </helpers>
+        <blocks>
+            <integernet_gridmassactionpagerdemo>
+                <class>IntegerNet_GridMassActionPagerDemo_Block</class>
+            </integernet_gridmassactionpagerdemo>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <integernet_gridmassactionpagerdemo before="Mage_Adminhtml">IntegerNet_GridMassActionPagerDemo_Adminhtml</integernet_gridmassactionpagerdemo>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
